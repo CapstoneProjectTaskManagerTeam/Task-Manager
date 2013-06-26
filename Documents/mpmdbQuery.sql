@@ -128,18 +128,15 @@ CREATE TABLE [TaskAssignments](
 	FOREIGN KEY (TaskID) REFERENCES Tasks(TaskID)
 )
 
-CREATE TABLE [dbo].[LogTypes](
-	[LogTypeID] [nvarchar](5) NOT NULL,
-	[LogTypeName] [nvarchar](15) NOT NULL,
-	PRIMARY KEY (LogTypeID)
-)
-
 CREATE TABLE [dbo].[Logs](
-	[LogID] [nvarchar](10) NOT NULL,
-	[LogTypeID] [nvarchar](5) NOT NULL,
-	[Description] [nvarchar](150) NOT NULL,
+	[LogID] [int] IDENTITY(1,1) NOT NULL,
+	Time [datetime] NOT NULL,
+	[Layer] [nvarchar](30) NOT NULL,
+	[Actor] [nvarchar](15) NOT NULL,
+	[Method] [nvarchar](15) NOT NULL,
+	[Type] [nvarchar](10) NOT NULL,
+	[Description] [nvarchar](max) NOT NULL,
 	PRIMARY KEY (LogID),
-	FOREIGN KEY (LogTypeID) REFERENCES LogTypes(LogTypeID)
 )
 
 CREATE TABLE [dbo].[Notifications](
@@ -207,21 +204,6 @@ INSERT INTO Groups VALUES('x','X')
 INSERT INTO Groups VALUES('y','Y')
 INSERT INTO Groups VALUES('z','Z')
 
---LogTypes Table
-INSERT INTO LogTypes VALUES('PR','Presentation')
-INSERT INTO LogTypes VALUES('BL','Business Logic')
-INSERT INTO LogTypes VALUES('DA','Data Access')
-
---Logs Table
-INSERT INTO Logs VALUES('PR001','PR','Sign up')
-INSERT INTO Logs VALUES('BL001','BL','Registration')
-INSERT INTO Logs VALUES('DA001','DA','Insert an User')
-INSERT INTO Logs VALUES('PR002','PR','Sign in')
-INSERT INTO Logs VALUES('BL002','BL','Authentication')
-INSERT INTO Logs VALUES('PR003','PR','Change Profile')
-INSERT INTO Logs VALUES('BL003','BL','Profile Management')
-INSERT INTO Logs VALUES('DA003','DA','Update an User')
-
 --Notifications Table
 
 --Roles Table
@@ -231,3 +213,9 @@ INSERT INTO Roles VALUES('PM','Project Manager')
 --UserTypes Table
 INSERT INTO UserTypes VALUES('CU','Consumer')
 INSERT INTO UserTypes VALUES('BA', 'Business Admin')
+
+-----------------SQL Views-----------------
+CREATE VIEW vi_commentbyTask AS
+SELECT A.Content, B.Name, C.TaskName  FROM Comments AS A, Tasks AS B, Users AS C
+WHERE A.UserID = C.UserID AND A.TaskID = B.TaskID
+-----------------SQL Procedures-----------------

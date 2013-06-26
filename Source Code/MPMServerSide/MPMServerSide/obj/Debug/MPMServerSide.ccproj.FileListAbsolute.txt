@@ -1,0 +1,2 @@
+F:\KhanhVD\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceConfiguration.cscfg
+F:\KhanhVD\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceDefinition.csdef

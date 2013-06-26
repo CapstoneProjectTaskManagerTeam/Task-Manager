@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFServices.BusinessLogicLayer.ProjectManagement.CommentManagement" CodeBehind="CommentManagement.svc.cs" %>
