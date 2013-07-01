@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MPM</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">Register</string>
+    <string name="email"> Enter your email </string>
+    <string name="password"> Enter password</string>
+    <string name="repassword"> Enter Confirm password</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_user">User</string>
+    <string name="title_activity_create_project">CreateProject</string>
+    <string name="projectname">Enter project name..</string>
+    <string name="title_activity_add_task">AddTask</string>
+
+</resources>

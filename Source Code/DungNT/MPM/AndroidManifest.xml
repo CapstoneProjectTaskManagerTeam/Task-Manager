@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="at.project.mpm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="at.project.mpm.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="at.project.mpm.Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="at.project.mpm.Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="at.project.mpm.User"
+            android:label="@string/title_activity_user" >
+        </activity>
+        <activity
+            android:name="at.project.mpm.CreateProject"
+            android:label="@string/title_activity_create_project"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="at.project.mpm.AddTask"
+            android:label="@string/title_activity_add_task" >
+        </activity>
+    </application>
+
+</manifest>
