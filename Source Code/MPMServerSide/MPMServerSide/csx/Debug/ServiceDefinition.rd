@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MPMServerSide" generation="1" functional="0" release="0" Id="40de6882-f6e3-4d62-883c-a11f8af83757" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MPMServerSide" generation="1" functional="0" release="0" Id="6e413c25-1f5a-4aa4-9007-12ed168ca565" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="MPMServerSideGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -71,9 +71,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="2c06af0b-7874-421f-81c6-f46083a0fd7a" ref="Microsoft.RedDog.Contract\ServiceContract\MPMServerSideContract@ServiceDefinition">
+    <implementation Id="62ad9439-6a4f-48be-9e36-7b5301f82c7c" ref="Microsoft.RedDog.Contract\ServiceContract\MPMServerSideContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="87568ced-f113-41b3-b74d-7c139f786940" ref="Microsoft.RedDog.Contract\Interface\WCFServices:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="4b24ced6-f8f2-48d0-a18a-01743c2032e7" ref="Microsoft.RedDog.Contract\Interface\WCFServices:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/MPMServerSide/MPMServerSideGroup/WCFServices:Endpoint1" />
           </inPort>

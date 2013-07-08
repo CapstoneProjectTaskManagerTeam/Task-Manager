@@ -69,10 +69,8 @@ CREATE TABLE [dbo].[States](
 	[ProjectID] [int] NOT NULL,
 	[StartDate] [datetime] NOT NULL,
 	[DueDate] [datetime] NOT NULL,
-	[NextState] [int] NULL,
 	PRIMARY KEY (StateID),
-	FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID),
-	FOREIGN KEY (NextStateID) REFERENCES States(StateID)
+	FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)
 )
 
 CREATE TABLE [dbo].[Tasks](
