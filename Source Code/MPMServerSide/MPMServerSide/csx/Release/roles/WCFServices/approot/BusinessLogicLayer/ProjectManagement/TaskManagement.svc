@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFServices.BusinessLogicLayer.ProjectManagement.TaskManagement" CodeBehind="TaskManagement.svc.cs" %>
