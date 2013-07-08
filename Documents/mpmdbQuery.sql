@@ -82,6 +82,7 @@ CREATE TABLE [dbo].[Tasks](
 	[StateID] [int] NOT NULL,
 	[ProjectID] [int] NOT NULL,
 	[Comments] [int] NULL,
+	[Status] [nvarchar](10) NOT NULL,
 	[StartDate] [datetime] NOT NULL,
 	[DueDate] [datetime] NOT NULL,
 	PRIMARY KEY (TaskID),
@@ -119,7 +120,7 @@ CREATE TABLE [dbo].[Contacts](
 	FOREIGN KEY (User02) REFERENCES Users(UserID)
 )
 
-CREATE TABLE [TaskAssignments](
+CREATE TABLE [dbo].[TaskAssignments](
 	[TaskAssignmentID] [int] IDENTITY(1,1) NOT NULL,
 	[UserID] [int] NOT NULL,
 	[TaskID] [int] NOT NULL,
@@ -219,3 +220,4 @@ CREATE VIEW vi_commentbyTask AS
 SELECT A.Content, B.Name, C.TaskName  FROM Comments AS A, Tasks AS B, Users AS C
 WHERE A.UserID = C.UserID AND A.TaskID = B.TaskID
 -----------------SQL Procedures-----------------
+

@@ -1,0 +1,20 @@
+-----------------Drop Table-----------------
+
+DROP TABLE [dbo].[OfflineMessage]
+DROP TABLE [dbo].[OfflineNotifications]
+DROP TABLE [dbo].[Notifications]
+DROP TABLE [dbo].[Logs]
+DROP TABLE [dbo].[TaskAssignments]
+DROP TABLE [dbo].[Contacts]
+DROP TABLE [dbo].[JoinProjects]
+DROP TABLE [dbo].[Comments]
+DROP TABLE [dbo].[Tasks]
+DROP TABLE [dbo].[States]
+DROP TABLE [dbo].[Projects]
+DROP TABLE [dbo].[Users]
+DROP TABLE [dbo].[UserTypes]
+DROP TABLE [dbo].[Roles]
+DROP TABLE [dbo].[Groups]
+DROP TABLE [dbo].[Genders]
+DROP TABLE [dbo].[AuthenticationTypes]
+
