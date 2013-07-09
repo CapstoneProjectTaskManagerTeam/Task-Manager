@@ -12,6 +12,6 @@ namespace WCFServices.BusinessLogicLayer.Message
     public interface IMessage
     {
         [OperationContract]
-        void DoWork();
+        int SendMessage(int sender, int receiver, string message);
     }
 }

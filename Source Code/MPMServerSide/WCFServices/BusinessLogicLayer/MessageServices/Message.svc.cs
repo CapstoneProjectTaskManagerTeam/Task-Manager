@@ -10,8 +10,9 @@ namespace WCFServices.BusinessLogicLayer.Message
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Message" in code, svc and config file together.
     public class Message : IMessage
     {
-        public void DoWork()
+        public int SendMessage(int sender, int receiver, string message)
         {
+            throw new NotImplementedException();
         }
     }
 }

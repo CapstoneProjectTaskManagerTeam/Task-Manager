@@ -10,8 +10,9 @@ namespace WCFServices.BusinessLogicLayer.SupportService
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "PermissionChecking" in code, svc and config file together.
     public class PermissionChecking : IPermissionChecking
     {
-        public void DoWork()
+        public bool CheckAdminPermssion(int userid)
         {
+            throw new NotImplementedException();
         }
     }
 }

@@ -12,6 +12,6 @@ namespace WCFServices.BusinessLogicLayer.SupportService
     public interface IPermissionChecking
     {
         [OperationContract]
-        void DoWork();
+        bool CheckAdminPermssion(int userid);
     }
 }

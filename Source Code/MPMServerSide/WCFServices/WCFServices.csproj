@@ -82,20 +82,20 @@
     <Compile Include="BusinessLogicLayer\ProjectManagementServices\State.svc.cs">
       <DependentUpon>State.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\Task\ITaskAssignment.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\Task\ITaskComment.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\Task\ITaskManagement.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\Task\ITaskOverdue.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskAssignment.svc.cs">
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\ITaskAssignment.cs" />
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\ITaskComment.cs" />
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\ITaskManagement.cs" />
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\ITaskOverdue.cs" />
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskAssignment.svc.cs">
       <DependentUpon>TaskAssignment.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskComment.svc.cs">
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskComment.svc.cs">
       <DependentUpon>TaskComment.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskManagement.svc.cs">
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskManagement.svc.cs">
       <DependentUpon>TaskManagement.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskOverdue.svc.cs">
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskOverdue.svc.cs">
       <DependentUpon>TaskOverdue.svc</DependentUpon>
     </Compile>
     <Compile Include="BusinessLogicLayer\SupportServices\ILogging.cs" />
@@ -194,10 +194,10 @@
     <Content Include="BusinessLogicLayer\NotificationServices\Notification.svc" />
     <Content Include="BusinessLogicLayer\ProjectManagementServices\Project.svc" />
     <Content Include="BusinessLogicLayer\ProjectManagementServices\State.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskAssignment.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskComment.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskManagement.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskOverdue.svc" />
+    <Content Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskAssignment.svc" />
+    <Content Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskComment.svc" />
+    <Content Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskManagement.svc" />
+    <Content Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskOverdue.svc" />
     <Content Include="BusinessLogicLayer\SupportServices\Logging.svc" />
     <Content Include="BusinessLogicLayer\SupportServices\OtherSupport.svc" />
     <Content Include="BusinessLogicLayer\SupportServices\PermissionChecking.svc" />

@@ -12,6 +12,15 @@ namespace WCFServices.BusinessLogicLayer.ProjectManagementServices
     public interface IProject
     {
         [OperationContract]
-        List<Project> LoadProjectbyUser(int userid);
+        List<Project> LoadProjectbyUser(int userId);
+
+        [OperationContract]
+        int AddNewProject(Project project);
+
+        [OperationContract]
+        bool IsValidProjectName(string projectName);
+
+        [OperationContract]
+        int AddDefauleStateforProject(int projectId);
     }
 }
