@@ -1,6 +1,6 @@
 -----------------Drop Table-----------------
 
-DROP TABLE [dbo].[OfflineMessage]
+DROP TABLE [dbo].[OfflineMessages]
 DROP TABLE [dbo].[OfflineNotifications]
 DROP TABLE [dbo].[Notifications]
 DROP TABLE [dbo].[Logs]
@@ -17,4 +17,3 @@ DROP TABLE [dbo].[Roles]
 DROP TABLE [dbo].[Groups]
 DROP TABLE [dbo].[Genders]
 DROP TABLE [dbo].[AuthenticationTypes]
-
