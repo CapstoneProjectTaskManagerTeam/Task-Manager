@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Data;
 
 namespace WCFServices.DataAccessLayer.SQLDatabaseAccess
 {
@@ -12,6 +13,38 @@ namespace WCFServices.DataAccessLayer.SQLDatabaseAccess
     public interface IOfflineNotifications
     {
         [OperationContract]
-        void DoWork();
+        DataTable GetOfflineNotificationbyUserID(int userId);
+
+        [OperationContract]
+        int InsertOfflineNotification(OfflineNotification offlineNotification);
+
+        [OperationContract]
+        int UpdateOfflineNotification(OfflineNotification offlineNotification);
+
+        [OperationContract]
+        int DeleteOfflineNotification(int offlineNotificationId);
+    }
+
+    [DataContract]
+    public class OfflineNotification
+    {
+        [DataMember(Name = "OfflineNotificationID")]
+        public int OfflineNotificationID
+        {
+            get;
+            set;
+        }
+
+        public int NotificationID
+        {
+            get;
+            set;
+        }
+
+        public int UserID
+        {
+            get;
+            set;
+        }
     }
 }

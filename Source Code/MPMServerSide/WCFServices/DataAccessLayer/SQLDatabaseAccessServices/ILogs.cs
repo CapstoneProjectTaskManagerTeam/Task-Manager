@@ -12,6 +12,60 @@ namespace WCFServices.DataAccessLayer.SQLDatabaseAccess
     public interface ILogs
     {
         [OperationContract]
-        void DoWork();
+        int InsertLog(Log log);
+    }
+
+    [DataContract]
+    public class Log
+    {
+        [DataMember(Name = "LogID")]
+        public int LogID
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "Time")]
+        public DateTime Time
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "Layer")]
+        public string Layer
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "Actor")]
+        public string Actor
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "Method")]
+        public string Method
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "Type")]
+        public string Type
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "Description")]
+        public string Description
+        {
+            get;
+            set;
+        }
+        
     }
 }

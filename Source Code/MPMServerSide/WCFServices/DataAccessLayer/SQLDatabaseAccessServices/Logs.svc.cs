@@ -10,8 +10,9 @@ namespace WCFServices.DataAccessLayer.SQLDatabaseAccess
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Logs" in code, svc and config file together.
     public class Logs : ILogs
     {
-        public void DoWork()
+        public int InsertLog(Log log)
         {
+            throw new NotImplementedException();
         }
     }
 }

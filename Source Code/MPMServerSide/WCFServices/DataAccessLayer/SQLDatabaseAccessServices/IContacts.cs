@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Data;
 
 namespace WCFServices.DataAccessLayer.SQLDatabaseAccess
 {
@@ -12,6 +13,37 @@ namespace WCFServices.DataAccessLayer.SQLDatabaseAccess
     public interface IContacts
     {
         [OperationContract]
-        void DoWork();
+        DataTable GetContactbyUser(int user01, int user02);
+
+        [OperationContract]
+        int InsertContact(Contact contact);
+
+        [OperationContract]
+        int DeleteContact(int contactId);
+    }
+
+    [DataContract]
+    public class Contact 
+    {
+        [DataMember(Name = "ContactID")]
+        public int ContactId
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "User01")]
+        public int User01
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Name = "User02")]
+        public int User02
+        {
+            get;
+            set;
+        }
     }
 }

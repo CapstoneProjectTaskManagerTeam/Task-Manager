@@ -53,7 +53,7 @@ CREATE TABLE [dbo].[Users](
 
 CREATE TABLE [dbo].[Projects](
 	[ProjectID] [int] IDENTITY(1,1) NOT NULL,
-	[ProjectName] [int] NOT NULL,
+	[ProjectName] [nvarchar](50) NOT NULL,
 	[Description] [nvarchar](150) NULL,
 	[OwnerUser] [int] NOT NULL,
 	[StartDate] [datetime] NOT NULL,
@@ -157,6 +157,7 @@ CREATE TABLE [dbo].[OfflineMessages](
 	[OfflineMessageID] [int] IDENTITY(1,1) NOT NULL,
 	[Sender] [int] NOT NULL,
 	[Receiver] [int] NOT NULL,
+	[Content] [nvarchar](150) NOT NULL,
 	PRIMARY KEY (OfflineMessageID),
 	FOREIGN KEY (Sender) REFERENCES Users(UserID),
 	FOREIGN KEY (Receiver) REFERENCES Users(UserID)

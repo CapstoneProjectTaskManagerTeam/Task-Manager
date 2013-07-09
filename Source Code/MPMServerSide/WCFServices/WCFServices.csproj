@@ -98,14 +98,14 @@
     <Compile Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskOverdue.svc.cs">
       <DependentUpon>TaskOverdue.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\SupportServices\DataEncryption.svc.cs">
-      <DependentUpon>DataEncryption.svc</DependentUpon>
-    </Compile>
-    <Compile Include="BusinessLogicLayer\SupportServices\IDataEncryption.cs" />
     <Compile Include="BusinessLogicLayer\SupportServices\ILogging.cs" />
+    <Compile Include="BusinessLogicLayer\SupportServices\IOtherSupport.cs" />
     <Compile Include="BusinessLogicLayer\SupportServices\IPermissionChecking.cs" />
     <Compile Include="BusinessLogicLayer\SupportServices\Logging.svc.cs">
       <DependentUpon>Logging.svc</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessLogicLayer\SupportServices\OtherSupport.svc.cs">
+      <DependentUpon>OtherSupport.svc</DependentUpon>
     </Compile>
     <Compile Include="BusinessLogicLayer\SupportServices\PermissionChecking.svc.cs">
       <DependentUpon>PermissionChecking.svc</DependentUpon>
@@ -198,8 +198,8 @@
     <Content Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskComment.svc" />
     <Content Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskManagement.svc" />
     <Content Include="BusinessLogicLayer\ProjectManagementServices\Task\TaskOverdue.svc" />
-    <Content Include="BusinessLogicLayer\SupportServices\DataEncryption.svc" />
     <Content Include="BusinessLogicLayer\SupportServices\Logging.svc" />
+    <Content Include="BusinessLogicLayer\SupportServices\OtherSupport.svc" />
     <Content Include="BusinessLogicLayer\SupportServices\PermissionChecking.svc" />
     <Content Include="BusinessLogicLayer\UserManagementServices\Authentication.svc" />
     <Content Include="BusinessLogicLayer\UserManagementServices\Contact.svc" />

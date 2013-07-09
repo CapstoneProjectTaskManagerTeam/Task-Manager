@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using WCFServices.DataAccessLayer.SQLDatabaseAccess;
 
 namespace WCFServices.BusinessLogicLayer.UserManagement
 {
@@ -12,6 +13,6 @@ namespace WCFServices.BusinessLogicLayer.UserManagement
     public interface IAuthentication
     {
         [OperationContract]
-        void DoWork();
+        int Login(User user);
     }
 }
