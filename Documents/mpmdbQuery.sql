@@ -22,11 +22,6 @@ CREATE TABLE [dbo].[Groups](
 	PRIMARY KEY (GroupID)
 )
 
-CREATE TABLE [dbo].[Roles](
-	[RoleID] [nvarchar](5) NOT NULL,
-	[RoleName] [nvarchar](15) NOT NULL,
-	PRIMARY KEY (RoleID)
-)
 
 CREATE TABLE [dbo].[UserTypes](
 	[UserTypeID] [nvarchar](5) NOT NULL,
@@ -49,17 +44,6 @@ CREATE TABLE [dbo].[Users](
 	FOREIGN KEY (UserTypeID) REFERENCES UserTypes(UserTypeID),
 	FOREIGN KEY (GenderID) REFERENCES Genders(GenderID),
 	FOREIGN KEY (AuthenticationTypeID) REFERENCES AuthenticationTypes(AuthenticationTypeID)
-)
-
-CREATE TABLE [dbo].[Projects](
-	[ProjectID] [int] IDENTITY(1,1) NOT NULL,
-	[ProjectName] [nvarchar](50) NOT NULL,
-	[Description] [nvarchar](150) NULL,
-	[OwnerUser] [int] NOT NULL,
-	[StartDate] [datetime] NOT NULL,
-	[DueDate] [datetime] NOT NULL,
-	PRIMARY KEY (ProjectID),
-	FOREIGN KEY (OwnerUser) REFERENCES Users(UserID)
 )
 
 CREATE TABLE [dbo].[States](
@@ -88,15 +72,7 @@ CREATE TABLE [dbo].[Tasks](
 	FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)
 )
 
-CREATE TABLE [dbo].[Comments](
-	[CommentID] [int] IDENTITY(1,1) NOT NULL,
-	[Content] [nvarchar](100) NOT NULL,
-	[UserID] [int] NOT NULL,
-	[TaskID] [int] NOT NULL,
-	PRIMARY KEY (CommentID),
-	FOREIGN KEY (UserID) REFERENCES Users(UserID),
-	FOREIGN KEY (TaskID) REFERENCES Tasks(TaskID)
-) 
+
 
 CREATE TABLE [dbo].[JoinProjects](
 	[JoinProjectID] [int] IDENTITY(1,1) NOT NULL,
@@ -109,14 +85,7 @@ CREATE TABLE [dbo].[JoinProjects](
 	FOREIGN KEY (RoleID) REFERENCES Roles(RoleID)
 )
 
-CREATE TABLE [dbo].[Contacts](
-	[ContactID] [int] IDENTITY(1,1) NOT NULL,
-	[User01] [int] NOT NULL,
-	[User02] [int] NOT NULL,
-	PRIMARY KEY (ContactID),
-	FOREIGN KEY (User01) REFERENCES Users(UserID),
-	FOREIGN KEY (User02) REFERENCES Users(UserID)
-)
+
 
 CREATE TABLE [dbo].[TaskAssignments](
 	[TaskAssignmentID] [int] IDENTITY(1,1) NOT NULL,
