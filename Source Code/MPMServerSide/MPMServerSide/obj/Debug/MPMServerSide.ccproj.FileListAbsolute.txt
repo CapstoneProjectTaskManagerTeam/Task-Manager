@@ -2,3 +2,8 @@ F:\KhanhVD\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceConfiguratio
 F:\KhanhVD\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceDefinition.csdef
 C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceConfiguration.cscfg
 C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceDefinition.csdef
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\WCFServices.dll
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\WCFServices.pdb

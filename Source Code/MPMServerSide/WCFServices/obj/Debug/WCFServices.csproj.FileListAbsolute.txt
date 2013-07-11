@@ -13,3 +13,4 @@ C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WC
 C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
 C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\obj\Debug\WCFServices.dll
 C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\obj\Debug\WCFServices.pdb
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\obj\Debug\WCFServices.csprojResolveAssemblyReference.cache

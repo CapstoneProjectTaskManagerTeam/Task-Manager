@@ -66,73 +66,53 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AzureLocalStorageTraceListener.cs" />
-    <Compile Include="BusinessLogicLayer\MessageServices\IMessage.cs" />
-    <Compile Include="BusinessLogicLayer\MessageServices\Message.svc.cs">
-      <DependentUpon>Message.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\MessageNotificationServices\IMessageService.cs" />
+    <Compile Include="BusinessLogicLayer\MessageNotificationServices\INotificationService.cs" />
+    <Compile Include="BusinessLogicLayer\MessageNotificationServices\MessageService.svc.cs">
+      <DependentUpon>MessageService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\NotificationServices\INotification.cs" />
-    <Compile Include="BusinessLogicLayer\NotificationServices\Notification.svc.cs">
-      <DependentUpon>Notification.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\MessageNotificationServices\NotificationService.svc.cs">
+      <DependentUpon>NotificationService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\IProject.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\IState.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\Project.svc.cs">
-      <DependentUpon>Project.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\IProjectService.cs" />
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\IStateService.cs" />
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\ITaskService.cs" />
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\ProjectService.svc.cs">
+      <DependentUpon>ProjectService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\State.svc.cs">
-      <DependentUpon>State.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\StateService.svc.cs">
+      <DependentUpon>StateService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\ITaskAssignment.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\ITaskComment.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\ITaskManagement.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\ITaskOverdue.cs" />
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskAssignment.svc.cs">
-      <DependentUpon>TaskAssignment.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskService.svc.cs">
+      <DependentUpon>TaskService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskComment.svc.cs">
-      <DependentUpon>TaskComment.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\SupportServices\ILoggingService.cs" />
+    <Compile Include="BusinessLogicLayer\SupportServices\IOtherSupportService.cs" />
+    <Compile Include="BusinessLogicLayer\SupportServices\IPermissionService.cs" />
+    <Compile Include="BusinessLogicLayer\SupportServices\LoggingService.svc.cs">
+      <DependentUpon>LoggingService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskManagement.svc.cs">
-      <DependentUpon>TaskManagement.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\SupportServices\OtherSupportService.svc.cs">
+      <DependentUpon>OtherSupportService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskOverdue.svc.cs">
-      <DependentUpon>TaskOverdue.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\SupportServices\PermissionService.svc.cs">
+      <DependentUpon>PermissionService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\SupportServices\ILogging.cs" />
-    <Compile Include="BusinessLogicLayer\SupportServices\IOtherSupport.cs" />
-    <Compile Include="BusinessLogicLayer\SupportServices\IPermissionChecking.cs" />
-    <Compile Include="BusinessLogicLayer\SupportServices\Logging.svc.cs">
-      <DependentUpon>Logging.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\UserManagementServices\IUserOnProjectService.cs" />
+    <Compile Include="BusinessLogicLayer\UserManagementServices\IUserService.cs" />
+    <Compile Include="BusinessLogicLayer\UserManagementServices\UserOnProjectService.svc.cs">
+      <DependentUpon>UserOnProjectService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\SupportServices\OtherSupport.svc.cs">
-      <DependentUpon>OtherSupport.svc</DependentUpon>
+    <Compile Include="BusinessLogicLayer\UserManagementServices\UserService.svc.cs">
+      <DependentUpon>UserService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\SupportServices\PermissionChecking.svc.cs">
-      <DependentUpon>PermissionChecking.svc</DependentUpon>
+    <Compile Include="DataAccessLayer\AzureStorageServices\FilesService.svc.cs">
+      <DependentUpon>FilesService.svc</DependentUpon>
     </Compile>
-    <Compile Include="BusinessLogicLayer\UserManagementServices\Authentication.svc.cs">
-      <DependentUpon>Authentication.svc</DependentUpon>
-    </Compile>
-    <Compile Include="BusinessLogicLayer\UserManagementServices\Contact.svc.cs">
-      <DependentUpon>Contact.svc</DependentUpon>
-    </Compile>
-    <Compile Include="BusinessLogicLayer\UserManagementServices\IAuthentication.cs" />
-    <Compile Include="BusinessLogicLayer\UserManagementServices\IContact.cs" />
-    <Compile Include="BusinessLogicLayer\UserManagementServices\IProfile.cs" />
-    <Compile Include="BusinessLogicLayer\UserManagementServices\IRegistration.cs" />
-    <Compile Include="BusinessLogicLayer\UserManagementServices\Profile.svc.cs">
-      <DependentUpon>Profile.svc</DependentUpon>
-    </Compile>
-    <Compile Include="BusinessLogicLayer\UserManagementServices\Registration.svc.cs">
-      <DependentUpon>Registration.svc</DependentUpon>
-    </Compile>
-    <Compile Include="DataAccessLayer\AzureStorageServices\Files.svc.cs">
-      <DependentUpon>Files.svc</DependentUpon>
-    </Compile>
-    <Compile Include="DataAccessLayer\AzureStorageServices\IFiles.cs" />
-    <Compile Include="DataAccessLayer\AzureStorageServices\IImages.cs" />
-    <Compile Include="DataAccessLayer\AzureStorageServices\Images.svc.cs">
-      <DependentUpon>Images.svc</DependentUpon>
+    <Compile Include="DataAccessLayer\AzureStorageServices\IFileService.cs" />
+    <Compile Include="DataAccessLayer\AzureStorageServices\IImageService.cs" />
+    <Compile Include="DataAccessLayer\AzureStorageServices\ImageService.svc.cs">
+      <DependentUpon>ImageService.svc</DependentUpon>
     </Compile>
     <Compile Include="DataAccessLayer\SQLDatabaseAccessServices\Comments.svc.cs">
       <DependentUpon>Comments.svc</DependentUpon>
@@ -190,23 +170,18 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BusinessLogicLayer\MessageServices\Message.svc" />
-    <Content Include="BusinessLogicLayer\NotificationServices\Notification.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\Project.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\State.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskAssignment.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskComment.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskManagement.svc" />
-    <Content Include="BusinessLogicLayer\ProjectManagementServices\TaskServices\TaskOverdue.svc" />
-    <Content Include="BusinessLogicLayer\SupportServices\Logging.svc" />
-    <Content Include="BusinessLogicLayer\SupportServices\OtherSupport.svc" />
-    <Content Include="BusinessLogicLayer\SupportServices\PermissionChecking.svc" />
-    <Content Include="BusinessLogicLayer\UserManagementServices\Authentication.svc" />
-    <Content Include="BusinessLogicLayer\UserManagementServices\Contact.svc" />
-    <Content Include="BusinessLogicLayer\UserManagementServices\Profile.svc" />
-    <Content Include="BusinessLogicLayer\UserManagementServices\Registration.svc" />
-    <Content Include="DataAccessLayer\AzureStorageServices\Files.svc" />
-    <Content Include="DataAccessLayer\AzureStorageServices\Images.svc" />
+    <Content Include="BusinessLogicLayer\MessageNotificationServices\MessageService.svc" />
+    <Content Include="BusinessLogicLayer\MessageNotificationServices\NotificationService.svc" />
+    <Content Include="BusinessLogicLayer\ProjectManagementServices\ProjectService.svc" />
+    <Content Include="BusinessLogicLayer\ProjectManagementServices\StateService.svc" />
+    <Content Include="BusinessLogicLayer\ProjectManagementServices\TaskService.svc" />
+    <Content Include="BusinessLogicLayer\SupportServices\LoggingService.svc" />
+    <Content Include="BusinessLogicLayer\SupportServices\OtherSupportService.svc" />
+    <Content Include="BusinessLogicLayer\SupportServices\PermissionService.svc" />
+    <Content Include="BusinessLogicLayer\UserManagementServices\UserOnProjectService.svc" />
+    <Content Include="BusinessLogicLayer\UserManagementServices\UserService.svc" />
+    <Content Include="DataAccessLayer\AzureStorageServices\FilesService.svc" />
+    <Content Include="DataAccessLayer\AzureStorageServices\ImageService.svc" />
     <Content Include="DataAccessLayer\SQLDatabaseAccessServices\Comments.svc" />
     <Content Include="DataAccessLayer\SQLDatabaseAccessServices\Contacts.svc" />
     <Content Include="DataAccessLayer\SQLDatabaseAccessServices\JoinProjects.svc" />
