@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Text;
 
 namespace WCFServices.BusinessLogicLayer.UserManagementServices
@@ -11,7 +12,15 @@ namespace WCFServices.BusinessLogicLayer.UserManagementServices
     [ServiceContract]
     public interface IUserService
     {
+        #region Authentication
         [OperationContract]
-        void DoWork();
+        [WebGet(
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "Login"
+            )]
+        int Login(string userName, string password);
+        #endregion
     }
 }
