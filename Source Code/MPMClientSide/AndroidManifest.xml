@@ -76,7 +76,8 @@
         </activity>
         <activity
             android:name="fsg.mpmclientside.controllers.AddMemberActivity"
-            android:label="@string/title_activity_add_member" >
+            android:label="@string/title_activity_add_member"
+            android:theme="@android:style/Theme.Holo.Dialog" >
         </activity>
         <activity
             android:name="fsg.mpmclientside.controllers.ProjectMemberDetailActivity"

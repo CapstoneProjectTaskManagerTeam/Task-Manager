@@ -6,6 +6,7 @@ import fsg.mpmclientside.R.menu;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
 
 public class AddMemberActivity extends Activity {
 
@@ -13,6 +14,14 @@ public class AddMemberActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add_member);
+	}
+	
+	public void onCancelClick(View v){
+		
+	}
+	
+	public void onAddClick(View v){
+		
 	}
 
 	@Override

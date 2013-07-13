@@ -17,7 +17,7 @@ public class WellcomeActivity extends Activity {
 	}
 	
 	public void OnNewUserClick(View v){
-		Intent intent = new Intent(WellcomeActivity.this, SignUpActivity.class);
+		Intent intent = new Intent(WellcomeActivity.this, RegisterActivity.class);
 		startActivity(intent);
 		Log.d(TAG, "Click on New User");
 	}

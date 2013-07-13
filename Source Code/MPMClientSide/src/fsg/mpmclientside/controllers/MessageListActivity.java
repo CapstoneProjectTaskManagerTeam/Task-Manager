@@ -6,6 +6,7 @@ import fsg.mpmclientside.R.menu;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
 
 public class MessageListActivity extends Activity {
 
@@ -14,7 +15,15 @@ public class MessageListActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_message_list);
 	}
-
+	
+	public void onImgUserClick(View v){
+		
+	}
+	
+	public void onImgHomeClick(View v){
+		
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

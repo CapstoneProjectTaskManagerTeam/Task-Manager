@@ -33,15 +33,18 @@
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="txtProjectMember">Project Member</string>
     <string name="login_screen_title">Login Screen</string>
-    <string name="login_screen_title">Login Screen</string>
     <string name="txtEmail">Email</string>
     <string name="editEmail_hint">Enter your email</string>
     <string name="txtPassword">Password</string>
     <string name="editPassword_hint">Enter password</string>
     <string name="btnLogin">Login</string>
     <string name="register_screen_title">Register Screen</string>
-    <string />
     <string name="title_activity_popup_menu">PopupMenu</string>
     <string name="title_activity_read_message">ReadMessageActivity</string>
-
+	<string name="txtAddMember">Add Member</string>
+	<string name="editUserName">Enter User Name...</string>
+	<string name="btnCancel">Cancel</string>
+	<string name="btnAdd">Add</string>
+	<string name="txtAssignTask">Assign Task</string>
+	<string name="txtMessageList">Message List</string>
 </resources>
