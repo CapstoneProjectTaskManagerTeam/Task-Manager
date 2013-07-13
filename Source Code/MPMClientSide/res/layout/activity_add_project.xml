@@ -39,7 +39,7 @@
     	    android:layout_height="wrap_content"
     	    android:layout_weight="5"
     	    android:onClick="onSaveClick"
-    	    android:text="@string/btn_Save" />
+    	    android:text="Save" />
 
     </LinearLayout>
     

@@ -102,6 +102,10 @@
             android:name="fsg.mpmclientside.PopupMenu"
             android:label="@string/title_activity_popup_menu" >
         </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.ReadMessageActivity"
+            android:label="@string/title_activity_read_message" >
+        </activity>
     </application>
 
 </manifest>

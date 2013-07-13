@@ -42,5 +42,6 @@
     <string name="register_screen_title">Register Screen</string>
     <string />
     <string name="title_activity_popup_menu">PopupMenu</string>
+    <string name="title_activity_read_message">ReadMessageActivity</string>
 
 </resources>
