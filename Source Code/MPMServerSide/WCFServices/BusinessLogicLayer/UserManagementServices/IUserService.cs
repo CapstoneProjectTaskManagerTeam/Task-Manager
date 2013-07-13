@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using WCFServices.DataAccessLayer.SQLDatabaseAccess;
 
 namespace WCFServices.BusinessLogicLayer.UserManagementServices
 {
@@ -12,7 +13,16 @@ namespace WCFServices.BusinessLogicLayer.UserManagementServices
     [ServiceContract]
     public interface IUserService
     {
-        #region Authentication
+        #region Login and Signup
+        [OperationContract]
+        [WebGet(
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "SignUp"
+            )]
+        int SignUp(User user);
+
         [OperationContract]
         [WebGet(
             BodyStyle = WebMessageBodyStyle.Wrapped,
@@ -20,7 +30,7 @@ namespace WCFServices.BusinessLogicLayer.UserManagementServices
             ResponseFormat = WebMessageFormat.Json,
             UriTemplate = "Login"
             )]
-        int Login(string userName, string password);
+        int Login(User user);
         #endregion
     }
 }

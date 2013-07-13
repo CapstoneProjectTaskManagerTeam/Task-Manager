@@ -32,8 +32,8 @@ namespace WCFServices.DataAccessLayer.SQLDatabaseAccess
             set;
         }
 
-        [DataMember(Name = "Layer")]
-        public string Layer
+        [DataMember(Name = "TAG")]
+        public string TAG
         {
             get;
             set;

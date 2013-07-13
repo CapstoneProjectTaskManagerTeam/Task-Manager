@@ -12,6 +12,7 @@ namespace WCFServices.BusinessLogicLayer.SupportService
     {
         public void DoWork()
         {
+            throw new NotImplementedException();
         }
     }
 }

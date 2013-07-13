@@ -11,7 +11,18 @@ namespace WCFServices.BusinessLogicLayer.SupportServices
     [ServiceContract]
     public interface IOtherSupportService
     {
+        #region Encrypt and Decrypt String
         [OperationContract]
-        string EncryptString(string inString);
+        string EncryptString(string str);
+
+        [OperationContract]
+        string encryt(string message);
+
+        [OperationContract]
+        string DecryptString(string str);
+        #endregion
+
+        [OperationContract]
+        string GetGravatar(string email, int size);
     }
 }
