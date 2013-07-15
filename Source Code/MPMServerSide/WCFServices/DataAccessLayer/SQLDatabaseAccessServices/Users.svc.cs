@@ -5,13 +5,15 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using System.Data;
+using WCFServices.BusinessLogicLayer.UserManagementServices;
 
 namespace WCFServices.DataAccessLayer.SQLDatabaseAccess
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Users" in code, svc and config file together.
     public class Users : IUsers
     {
-        public DataTable GetUserDetail(int userId)
+
+        public DataTable SelectUser(User user)
         {
             throw new NotImplementedException();
         }
