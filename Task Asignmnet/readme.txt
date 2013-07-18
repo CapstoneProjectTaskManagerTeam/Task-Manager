@@ -1,1 +1,0 @@
-Phan chia cong viec update weekly
