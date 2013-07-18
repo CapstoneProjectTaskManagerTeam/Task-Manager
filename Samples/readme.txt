@@ -1,1 +1,0 @@
-Cac vi du ve Android, WCF
