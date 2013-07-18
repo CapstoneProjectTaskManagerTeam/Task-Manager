@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTask" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText 
+        android:id="@+id/taskname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:hint="@string/taskname"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="20dp"
+    	android:orientation="horizontal">
+
+    	<Button
+    	    android:id="@+id/btnCancel"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="5"
+    	    android:onClick="onCancelClick"
+    	    android:text="Cancel" />
+
+    	<Button
+    	    android:id="@+id/btnAdd"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="5"
+    	    android:onClick="onAddClick"
+    	    android:text="Save  " />
+
+    </LinearLayout>
+    
+</LinearLayout>

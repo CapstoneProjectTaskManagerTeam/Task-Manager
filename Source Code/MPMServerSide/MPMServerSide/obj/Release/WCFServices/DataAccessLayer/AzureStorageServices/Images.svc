@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFServices.DataAccessLayer.AzureStorageServices.Images" CodeBehind="Images.svc.cs" %>

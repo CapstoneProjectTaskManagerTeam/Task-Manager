@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fsg.mpmclientside"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="fsg.mpmclientside.controllers.WellcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.AddTaskActivity"
+            android:label="@string/title_activity_add_task" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.AddProjectActivity"
+            android:label="@string/title_activity_add_project" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.UserManagementActivity"
+            android:label="@string/title_activity_user_management" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.EditTaskActivity"
+            android:label="@string/title_activity_edit_task" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.AssignTaskActivity"
+            android:label="@string/title_activity_assign_task" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.ProjectSettingActivity"
+            android:label="@string/title_activity_project_setting" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.MyTaskActivity"
+            android:label="@string/title_activity_my_task" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.StateSettingActivity"
+            android:label="@string/title_activity_state_setting" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.TasksOnProjectActivity"
+            android:label="@string/title_activity_tasks_on_project" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.ProjectMemberListActivity"
+            android:label="@string/title_activity_project_member_list" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.AddMemberActivity"
+            android:label="@string/title_activity_add_member" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.ProjectMemberDetailActivity"
+            android:label="@string/title_activity_project_member_detail" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.UserProfileActivity"
+            android:label="@string/title_activity_user_profile" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.SendMessageActivity"
+            android:label="@string/title_activity_send_message" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.MessageListActivity"
+            android:label="@string/title_activity_message_list" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="fsg.mpmclientside.controllers.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+    </application>
+
+</manifest>

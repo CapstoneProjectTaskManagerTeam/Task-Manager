@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Hearder -->
+
+        <LinearLayout
+            android:id="@+id/header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/background_header"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_backhome" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/logo_user" />
+        </LinearLayout>
+
+        <!-- Footer -->
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header2"
+            android:layout_marginTop="30dp"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/btn_mystack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_mystack" />
+
+                <ImageButton
+                    android:id="@+id/btn_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_contact" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <ImageButton
+                    android:id="@+id/btn_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_message" />
+
+                <ImageButton
+                    android:id="@+id/btn_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_profile" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="20dp" >
+
+                <ImageButton
+                    android:id="@+id/btn_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_setting" />
+
+                <ImageButton
+                    android:id="@+id/btn_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_logout" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</ScrollView>

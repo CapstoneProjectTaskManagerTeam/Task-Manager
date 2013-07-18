@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFServices.BusinessLogicLayer.SupportServices.PermissionService" CodeBehind="PermissionService.svc.cs" %>

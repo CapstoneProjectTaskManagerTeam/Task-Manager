@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="MPMServerSide" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="WCFServices">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=mpmstorage;AccountKey=j6BNAHhcl1Q7VWjs9nvtue8HQPFQWV1lcYdGIhWVIYfA9FeOZiu8De94erzAsuLk1IsPYTh2Q3X8fN+x0J7pVA==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

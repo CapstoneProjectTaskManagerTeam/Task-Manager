@@ -1,0 +1,11 @@
+F:\KhanhVD\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceConfiguration.cscfg
+F:\KhanhVD\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceDefinition.csdef
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceDefinition.csdef
+F:\Google Drive\Capstone Project\Task-Manager\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceConfiguration.cscfg
+F:\Google Drive\Capstone Project\Task-Manager\Source Code\MPMServerSide\MPMServerSide\bin\Debug\ServiceDefinition.csdef
+F:\Google Drive\Capstone Project\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\Google Drive\Capstone Project\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+F:\Google Drive\Capstone Project\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+F:\Google Drive\Capstone Project\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\WCFServices.dll
+F:\Google Drive\Capstone Project\Task-Manager\Source Code\MPMServerSide\MPMServerSide\obj\Debug\WCFServices\bin\WCFServices.pdb

@@ -133,7 +133,6 @@ CREATE TABLE [dbo].[Logs](
 	[LogID] [int] IDENTITY(1,1) NOT NULL,
 	Time [datetime] NOT NULL,
 	[TAG] [nvarchar](30) NOT NULL,
-	[Actor] [nvarchar](15) NOT NULL,
 	[Method] [nvarchar](15) NOT NULL,
 	[Type] [nvarchar](10) NOT NULL,
 	[Description] [nvarchar](max) NOT NULL,
@@ -141,26 +140,19 @@ CREATE TABLE [dbo].[Logs](
 )
 
 CREATE TABLE [dbo].[Notifications](
-	[NotificationID] [nvarchar](5) NOT NULL,
-	[Description] [nvarchar](150) NOT NULL,
-	PRIMARY KEY (NotificationID)
-)
-
-CREATE TABLE [dbo].[OfflineNotifications](
-	[OfflineNotificationID] [int] IDENTITY(1,1) NOT NULL,
-	[NotificationID] [nvarchar](5) NOT NULL,
+	[NotificationID] [int] IDENTITY(1,1) NOT NULL,
 	[UserID] [int] NOT NULL,
-	PRIMARY KEY (OfflineNotificationID),
-	FOREIGN KEY (NotificationID) REFERENCES Notifications(NotificationID),
+	[Content] [nvarchar](150) NOT NULL,
+	PRIMARY KEY (NotificationID),
 	FOREIGN KEY (UserID) REFERENCES Users(UserID)
 )
 
-CREATE TABLE [dbo].[OfflineMessages](
-	[OfflineMessageID] [int] IDENTITY(1,1) NOT NULL,
+CREATE TABLE [dbo].[Messages](
+	[MessageID] [int] IDENTITY(1,1) NOT NULL,
 	[Sender] [int] NOT NULL,
 	[Receiver] [int] NOT NULL,
 	[Content] [nvarchar](150) NOT NULL,
-	PRIMARY KEY (OfflineMessageID),
+	PRIMARY KEY (MessageID),
 	FOREIGN KEY (Sender) REFERENCES Users(UserID),
 	FOREIGN KEY (Receiver) REFERENCES Users(UserID)
 )
@@ -205,16 +197,18 @@ INSERT INTO Groups VALUES('w','W')
 INSERT INTO Groups VALUES('x','X')
 INSERT INTO Groups VALUES('y','Y')
 INSERT INTO Groups VALUES('z','Z')
+INSERT INTO Groups VALUES('','')
 
 --Notifications Table
 
 --Roles Table
-INSERT INTO Roles VALUES('ME','Project Member')
+INSERT INTO Roles VALUES('BA','Business Admin')
 INSERT INTO Roles VALUES('PM','Project Manager')
+INSERT INTO Roles VALUES('ME','Project Member')
 
 --UserTypes Table
-INSERT INTO UserTypes VALUES('CU','Consumer')
-INSERT INTO UserTypes VALUES('BA', 'Business Admin')
+INSERT INTO UserTypes VALUES('FU','Free User')
+INSERT INTO UserTypes VALUES('PU', 'Premium User')
 
 -----------------SQL Views-----------------
 -----------------SQL Procedures-----------------

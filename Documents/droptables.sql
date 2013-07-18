@@ -1,7 +1,6 @@
 -----------------Drop Table-----------------
 
-DROP TABLE [dbo].[OfflineMessages]
-DROP TABLE [dbo].[OfflineNotifications]
+DROP TABLE [dbo].[Messages]
 DROP TABLE [dbo].[Notifications]
 DROP TABLE [dbo].[Logs]
 DROP TABLE [dbo].[TaskAssignments]

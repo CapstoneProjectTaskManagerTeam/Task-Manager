@@ -1,0 +1,16 @@
+F:\KhanhVD\Source Code\MPMServerSide\WCFServices\bin\WCFServices.dll
+F:\KhanhVD\Source Code\MPMServerSide\WCFServices\bin\WCFServices.pdb
+F:\KhanhVD\Source Code\MPMServerSide\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\KhanhVD\Source Code\MPMServerSide\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+F:\KhanhVD\Source Code\MPMServerSide\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+F:\KhanhVD\Source Code\MPMServerSide\WCFServices\obj\Release\ResolveAssemblyReference.cache
+F:\KhanhVD\Source Code\MPMServerSide\WCFServices\obj\Release\WCFServices.dll
+F:\KhanhVD\Source Code\MPMServerSide\WCFServices\obj\Release\WCFServices.pdb
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\bin\WCFServices.dll
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\bin\WCFServices.pdb
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\obj\Release\WCFServices.dll
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\obj\Release\WCFServices.pdb
+C:\Users\KhanhVD00437\Documents\GitHub\Task-Manager\Source Code\MPMServerSide\WCFServices\obj\Release\WCFServices.csprojResolveAssemblyReference.cache
